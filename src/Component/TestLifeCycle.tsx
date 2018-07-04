@@ -14,6 +14,9 @@ export class ParentComponent extends React.Component<IProps, IState> {
 
   constructor(props: IProps) {
     super(props);
+    this.state = {
+      data: ''
+    };
     console.log('父组件 constructor');
   }
 
@@ -46,12 +49,19 @@ export class ParentComponent extends React.Component<IProps, IState> {
     console.log('父组件 componentWillUnmount');
   }
 
+  onClick = () => {
+    this.setState({
+      data: 'hello'
+    });
+  };
+
   render() {
     console.log('父组件  调用 render');
     return (
       <div>
         本组件主要用途为查看，父子组件的 声明周期 函数的执行顺序，对加载过程更深入的了解。
-        <ChildrenComponent/>
+        <ChildrenComponent data={this.state.data}/>
+        <button onClick={this.onClick}>更改子组件数据</button>
       </div>
     );
   }
@@ -99,7 +109,7 @@ class ChildrenComponent extends React.Component<IProps, IState> {
     console.log('子组件  调用 render');
     return (
       <div>
-        显示内容
+        子组件显示内容: {this.props.data}
       </div>
     );
   }
