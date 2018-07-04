@@ -10,7 +10,7 @@ interface IProps {
 
 export class ParentComponent extends React.Component<IProps, IState> {
 
-  private text = new PrintHello('父组件 类元素初始化');
+  public text = new PrintHello('父组件 类元素初始化');
 
   constructor(props: IProps) {
     super(props);
@@ -59,7 +59,7 @@ export class ParentComponent extends React.Component<IProps, IState> {
 
 class ChildrenComponent extends React.Component<IProps, IState> {
 
-  private text = new PrintHello('子组件 类元素初始化');
+  public text = new PrintHello('子组件 类元素初始化');
 
   constructor(props: IProps) {
     super(props);
