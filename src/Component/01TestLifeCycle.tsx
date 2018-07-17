@@ -8,6 +8,19 @@ interface IProps {
   data?: string;
 }
 
+function log(target: any, name: any, descriptor: any) {
+  const oldValue = descriptor.value;
+
+  descriptor.value = function() {
+    console.log(`Calling ${name} with`, arguments);
+    const result =  oldValue.apply(this, arguments);
+    console.log('执行结束');
+    return result;
+  };
+
+  return descriptor;
+}
+
 export class ParentComponent extends React.Component<IProps, IState> {
 
   public text = new PrintHello('父组件 类元素初始化');
@@ -20,6 +33,7 @@ export class ParentComponent extends React.Component<IProps, IState> {
     console.log('父组件 constructor');
   }
 
+  @log
   componentWillMount() {
     console.log('父组件 componentWillMount');
   }

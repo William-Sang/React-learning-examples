@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import { Route } from 'react-router';
-import { ParentComponent } from './Component/TestLifeCycle';
+import { ParentComponent } from './Component/01TestLifeCycle';
 import ExampleListPage from './Component/ExampleList';
 
 class App extends React.Component {
