@@ -10,6 +10,7 @@
     "no-console": false,
     "member-access": false,
     "max-classes-per-file": false,
-    "ordered-imports": false
+    "ordered-imports": false,
+    "only-arrow-functions": false
   }
 }

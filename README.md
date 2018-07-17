@@ -12,5 +12,6 @@ yarn start
 ## 案例列表
 
 1. React 父子组件之间的声明周期函数调用顺序展示
-2. *TODO* React HOC 使用
+2. React 对类方法使用装饰器添加行为
 3. *TODO* React Ref 使用
+4. *TODO* React HOC 使用
