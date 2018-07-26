@@ -11,6 +11,7 @@
     "member-access": false,
     "max-classes-per-file": false,
     "ordered-imports": false,
-    "only-arrow-functions": false
+    "only-arrow-functions": false,
+    "object-literal-sort-keys": false
   }
 }

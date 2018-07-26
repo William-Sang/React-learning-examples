@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/echarts": "0.0.13",
     "@types/react-router-dom": "^4.2.7",
+    "echarts": "^4.1.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
