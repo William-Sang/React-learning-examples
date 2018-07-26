@@ -13,5 +13,7 @@ yarn start
 
 1. React 父子组件之间的声明周期函数调用顺序展示
 2. React 对类方法使用装饰器添加行为
+3. 使用第三方dom - 整合 Echarts
+4. 使用第三方dom - 整合 Monaco Editor
 3. *TODO* React Ref 使用
 4. *TODO* React HOC 使用
